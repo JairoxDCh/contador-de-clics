@@ -18,10 +18,10 @@ function App() {
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
-        <img 
+        {/* <img 
           className='freecodecamp-logo' 
           src={freeCodeCampoLogo}
-          alt='Logo de freecodecamp'/>
+          alt='Logo de freecodecamp'/> */}
       </div>
       <div className='contenedor-principal'>
         <Contador 
