@@ -1,7 +1,7 @@
 import './App.css';
 import freeCodeCampoLogo from './imagenes/freecodecamp-logo.png';
 import Boton from './componentes/Boton.js'
-
+import Contador from './componentes/Contador';
 function App() {
   
   const manejarClic = () => { 
@@ -20,14 +20,16 @@ function App() {
           alt='Logo de freecodecamp'/>
       </div>
       <div className='contenedor-principal'>
-      <Boton 
-        texto='Clic'
-        esBotonDeClic={true}
-        manejarClic={manejarClic}/>
-      <Boton 
-        texto='Reiniciar'
-        esBotonDeClic={false}
-        manejarClic={reiniciarContador}/>
+        <Contador 
+          numClics='10'/>
+        <Boton 
+          texto='Clic'
+          esBotonDeClic={true}
+          manejarClic={manejarClic} />
+        <Boton 
+          texto='Reiniciar'
+          esBotonDeClic={false}
+          manejarClic={reiniciarContador} />
       </div>
     </div>
   );
