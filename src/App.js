@@ -3,6 +3,14 @@ import freeCodeCampoLogo from './imagenes/freecodecamp-logo.png';
 import Boton from './componentes/Boton.js'
 
 function App() {
+  
+  const manejarClic = () => { 
+    console.log('Clic');
+  }
+  const reiniciarContador = () => { 
+    console.log('Reiniciar');
+  }
+
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
